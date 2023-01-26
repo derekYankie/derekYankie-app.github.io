@@ -6,17 +6,17 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
-      - name: NPM Install
+      - name: NPM Install 🧰
         run: npm ci
         working-directory: ./react-todo-list-app
-      - name: Build app
+      - name: Build app 🛠
         run: npm run build
         working-directory: ./react-todo-list-app
-      - name: Deploy
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: todo-list-react
