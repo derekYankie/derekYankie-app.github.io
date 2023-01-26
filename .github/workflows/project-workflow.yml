@@ -1,0 +1,23 @@
+name: Deploy TODO List
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latests
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+      - name: NPM Install 🧰
+        run: npm ci
+        working-directory: ./react-todo-list-app
+      - name: Build app 🛠s
+        run: npm run build
+        working-directory: ./react-todo-list-app
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: todo-list-react
+          folder: react-todo-list-app/build
