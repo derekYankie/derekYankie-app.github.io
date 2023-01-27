@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/derekYankie-app.github.io/static/css/main.ee00ca32.css",
-    "main.js": "/derekYankie-app.github.io/static/js/main.1be9ef45.js",
+    "main.js": "/derekYankie-app.github.io/static/js/main.51c78f35.js",
     "static/js/787.f9686cd6.chunk.js": "/derekYankie-app.github.io/static/js/787.f9686cd6.chunk.js",
     "index.html": "/derekYankie-app.github.io/index.html",
     "main.ee00ca32.css.map": "/derekYankie-app.github.io/static/css/main.ee00ca32.css.map",
-    "main.1be9ef45.js.map": "/derekYankie-app.github.io/static/js/main.1be9ef45.js.map",
+    "main.51c78f35.js.map": "/derekYankie-app.github.io/static/js/main.51c78f35.js.map",
     "787.f9686cd6.chunk.js.map": "/derekYankie-app.github.io/static/js/787.f9686cd6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee00ca32.css",
-    "static/js/main.1be9ef45.js"
+    "static/js/main.51c78f35.js"
   ]
 }
