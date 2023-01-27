@@ -1,6 +1,9 @@
 name: GH Action Job Summary
 on:
-  workflow_dispatch
+  workflow_run:
+    workflows: [pages-build-deployment]
+    types:
+      - completed
 jobs:
   summary:
     name: Summary
