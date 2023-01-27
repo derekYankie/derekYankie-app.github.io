@@ -2,14 +2,14 @@ name: GH Action Job Summary
 on:
   workflow_dispatch
 jobs:
-  Summary:
-  name: Summary
-  runs-on: ubuntu-latest
+  summary:
+    name: Summary
+    runs-on: ubuntu-latest
     steps:
-    -name: Simple job summary ✍️
-       run: echo "### Hello World! :rocket:" >> $GITHUB_STEP_SUMMARY
+    - name: Simple job summary ✍️
+      run: echo "### Hello World! :rocket:" >> $GITHUB_STEP_SUMMARY
 
-    -name: Generate a table of test results 🧪
+    - name: Generate a table of test results 🧪
       run: |
          echo "| Test Result :test_tube: | Passed :green_circle: | Failed :x: | Skipped | Time Duration :alarm_clock: " >> $GITHUB_STEP_SUMMARY
          echo "| ---------- | ----- | ----- | ----- | ---------- |" >> $GITHUB_STEP_SUMMARY
