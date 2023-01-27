@@ -1,16 +1,19 @@
+# My automated GH Action 
+# It runs after the completion of the "Deploy TODO List" workflow 
 name: GH Action Job Summary
 on:
+  # automated event trigger.
   workflow_run:
     workflows: [Deploy TODO List]
     types:
       - completed
 jobs:
   summary:
-    name: Summary
+    name: Table
     runs-on: ubuntu-latest
     steps:
     - name: Simple job summary ✍️
-      run: echo "### Hello World! :rocket:" >> $GITHUB_STEP_SUMMARY
+      run: echo "### Test Summary! :man_scientist:" >> $GITHUB_STEP_SUMMARY
 
     - name: Generate a table of test results 🧪
       run: |
@@ -18,4 +21,4 @@ jobs:
          echo "| ---------- | ----- | ----- | ----- | ---------- |" >> $GITHUB_STEP_SUMMARY
          echo "| :green_circle: Pass | 122 | 0 | 3 | 12m 3s |" >> $GITHUB_STEP_SUMMARY
          echo "| :x: Failed | 121 | 2 | 3 | 10m 3s |" >> $GITHUB_STEP_SUMMARY
-         echo "| green_circle: Pass | 4 | 12 | 3 | 9m 4s |" >> $GITHUB_STEP_SUMMARY
+         echo "| :green_circle: Pass | 4 | 12 | 3 | 9m 4s |" >> $GITHUB_STEP_SUMMARY
