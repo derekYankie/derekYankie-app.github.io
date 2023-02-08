@@ -1,4 +1,4 @@
-# To Do App 🌐 📝 :octocat:
+# To Do App 🌐 📝
 ## Powered by React, GitHub pages &amp; GitHub actions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
