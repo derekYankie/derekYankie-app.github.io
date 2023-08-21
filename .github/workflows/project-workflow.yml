@@ -13,7 +13,7 @@ jobs:
       - name: NPM Install 🧰
         run: npm ci
         working-directory: ./react-todo-list-app
-      - name: Build app 🛠
+      - name: Build app 🏗
         run: npm run build
         working-directory: ./react-todo-list-app
       - name: Deploy 🚀
