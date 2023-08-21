@@ -1,5 +1,5 @@
 # To Do App 🌐 📝
-## Powered by React, GitHub pages &amp; GitHub actions
+## Powered by React, GitHub Pages &amp; GitHub Actions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
